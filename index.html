@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TECHNOZ — Coming Soon</title>
+    <meta
+      name="description"
+      content="TECHNOZ is launching soon. Design, technology, and production — something new is on the way."
+    />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-shade" aria-hidden="true"></div>
+
+      <header class="header">
+        <a class="brand" href="#top" aria-label="TECHNOZ home">
+          <img src="assets/favicon.png" alt="" class="brand__mark" />
+          <span class="brand__word">TECHNOZ</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav id="site-nav" class="nav" aria-label="Primary">
+          <a href="#notify">Work <span>+</span></a>
+          <a href="#notify">Services <span>+</span></a>
+          <a href="#notify">Contact us</a>
+          <a href="#notify">About</a>
+        </nav>
+
+        <a class="btn btn--cta" href="#notify">Get in touch</a>
+      </header>
+
+      <main id="top" class="main">
+        <p class="eyebrow">Website in production</p>
+        <h1>Coming soon</h1>
+        <p class="lede">
+          A new TECHNOZ experience is almost ready. Design, technology, and
+          production — built for brands that want to look inevitable.
+        </p>
+
+        <div class="countdown" role="timer" aria-live="polite">
+          <div class="countdown__cell">
+            <span class="countdown__num" data-unit="days">00</span>
+            <span class="countdown__label">Days</span>
+          </div>
+          <div class="countdown__cell">
+            <span class="countdown__num" data-unit="hours">00</span>
+            <span class="countdown__label">Hours</span>
+          </div>
+          <div class="countdown__cell">
+            <span class="countdown__num" data-unit="minutes">00</span>
+            <span class="countdown__label">Minutes</span>
+          </div>
+          <div class="countdown__cell">
+            <span class="countdown__num" data-unit="seconds">00</span>
+            <span class="countdown__label">Seconds</span>
+          </div>
+        </div>
+
+        <form id="notify" class="notify" novalidate>
+          <label class="sr-only" for="email">Email address</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            placeholder="Enter your email"
+            required
+          />
+          <button class="btn btn--cta" type="submit">Notify me</button>
+          <p class="notify__status" role="status" aria-live="polite"></p>
+        </form>
+      </main>
+
+      <footer class="footer">
+        <a class="brand brand--footer" href="#top" aria-label="TECHNOZ">
+          <img src="assets/favicon.png" alt="" class="brand__mark" />
+          <span class="brand__word">TECHNOZ</span>
+        </a>
+        <p>© 2026 TECHNOZ</p>
+      </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
